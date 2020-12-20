@@ -28,7 +28,7 @@ data.forEach((UFOReport) => {
 //appending a cell-> row 
         var cell = row.append("td");
         cell.text(value);
-        console.log(key, value)
+        console.log(key,value);
 
     });
 
@@ -45,7 +45,6 @@ function runEnter() {
 //so as to inhibit the webpage refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
-
 //extra 
 //  var cityInput = d3.select("#city");
 // var stateInput = d3.select("#state");
@@ -77,11 +76,10 @@ function runEnter() {
 //appending a cell-> row  
             var cell = row.append("td");
             cell.text(value);
-// console.log(key, value)
+//console.log(key, value);
 
         });
     });
-
 };
 //function runEnter()
 
@@ -89,7 +87,10 @@ function runEnter() {
 // end of UFO levl 1
 
 
-// 
+
+
+//testing :- 
+//entering the date 1/8/2010 displays four rows from that date. 
 
 
 
