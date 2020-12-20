@@ -40,9 +40,9 @@ button.on("click", runEnter);
 form.on("click", runEnter);
 
 
-// function runEnter 
+// building function runEnter 
 function runEnter() {
-//inhibit refresh
+//so as to inhibit the webpage from refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
 
