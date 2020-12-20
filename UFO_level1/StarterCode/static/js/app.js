@@ -1,7 +1,7 @@
 // from data.js
 var tableData = data;
 
-// CODE below
+// CODE below:-
 
 //console.log(tableData);
 
@@ -18,7 +18,7 @@ var form = d3.select("#form-control");
 
 
 //table
-// arrow function to save time. 
+// utilized arrow function to save time here.  
 data.forEach((UFOReport) => {
     console.log(UFOReport);
     var row = tbody.append("tr");
@@ -45,18 +45,18 @@ function runEnter() {
 //inhibit refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
-//
+
 //  var cityInput = d3.select("#city");
 // var stateInput = d3.select("#state");
 // var countryInput = d3.select("#country");
 // var shapeInput = d3.select("#shape");
-// var commentInput = d3.select("#shape")'
+// var commentInput = d3.select("#shape");
 
     var amountInput = dateInput.property("value");
     console.log(amountInput);
 
 
-// filtering my datetime
+// filtering by datetime
     var newData = tableData.filter(ufo => ufo.datetime === amountInput);
 
 
@@ -64,7 +64,7 @@ function runEnter() {
     console.log(newData);
 //tbody
     var tbody = d3.select("tbody");
-//refresh the table
+//important to refresh the table
     tbody.html("");
 //table w/ filtered data
     newData.forEach((UFOReport) => {
@@ -81,7 +81,9 @@ function runEnter() {
     });
 
 };
-//function runEnter
+//function runEnter()
+
+
 // end of UFO levl 1
 
 
