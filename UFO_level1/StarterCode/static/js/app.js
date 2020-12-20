@@ -45,8 +45,13 @@ function runEnter() {
 //inhibit refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
+//
 //  var cityInput = d3.select("#city");
 // var stateInput = d3.select("#state");
+// var countryInput = d3.select("#country");
+// var shapeInput = d3.select("#shape");
+// var commentInput = d3.select("#shape")'
+
     var amountInput = dateInput.property("value");
     console.log(amountInput);
 
@@ -77,7 +82,7 @@ function runEnter() {
 
 };
 //function runEnter
-// end of UFO levl1
+// end of UFO levl 1
 
 
 
