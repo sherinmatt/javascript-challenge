@@ -18,7 +18,7 @@ var form = d3.select("#form-control");
 
 
 //table
-// arrow function 
+// arrow function to save time. 
 data.forEach((UFOReport) => {
     console.log(UFOReport);
     var row = tbody.append("tr");
@@ -45,7 +45,7 @@ function runEnter() {
 //inhibit refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
-// var cityInput = d3.select("#city");
+//  var cityInput = d3.select("#city");
 // var stateInput = d3.select("#state");
     var amountInput = dateInput.property("value");
     console.log(amountInput);
@@ -76,7 +76,8 @@ function runEnter() {
     });
 
 };
-//function 
+//function runEnter
+// end of UFO levl1
 
 
 
