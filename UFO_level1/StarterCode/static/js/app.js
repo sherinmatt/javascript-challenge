@@ -42,16 +42,18 @@ form.on("click", runEnter);
 
 // building function runEnter 
 function runEnter() {
-//so as to inhibit the webpage from refresh
+//so as to inhibit the webpage refresh
     d3.event.preventDefault();
     var dateInput = d3.select("#datetime");
 
+//extra 
 //  var cityInput = d3.select("#city");
 // var stateInput = d3.select("#state");
 // var countryInput = d3.select("#country");
 // var shapeInput = d3.select("#shape");
-// var commentInput = d3.select("#shape");
 
+
+// value property 
     var amountInput = dateInput.property("value");
     console.log(amountInput);
 
@@ -87,6 +89,7 @@ function runEnter() {
 // end of UFO levl 1
 
 
+// 
 
 
 
